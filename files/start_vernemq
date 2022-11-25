@@ -1,4 +1,4 @@
-#!/bin/sh -eu
+#!/bin/sh -e
 
 NET_INTERFACE=$(route | grep '^default' | grep -o '[^ ]*$')
 NET_INTERFACE=${DOCKER_NET_INTERFACE:-${NET_INTERFACE}}
